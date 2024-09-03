@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Meu primeiro formulário</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Escreva seu nome">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Escreva seu email">
+            <br>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="3" maxlength="8">
+            <br>
+            <br>
+         
+            <input type="radio" name="generoF" id="generoF">
+            <label for="genero">Masculino</label>
+
+            <input type="radio" name="generoM" id="generoM">
+            <label for="radio">Feminino</label>
+            
+            <input type="radio" name="NãoInformado" id="NãoInformado">
+            <label for="NãoInformado">Não Informado</label>
+           <br>
+           <br>
+           
+                <hr>
+            <div>
+                <h4>Lista de Compras!</h4>
+                <input type="checkbox" name="feijao" id="feijao">
+                <label for="feijao">feijao</label>
+                <br>
+                <input type="checkbox" name="batata" id="batata">
+                <label for="batata">batata</label>
+                <br>
+                <input type="checkbox" name="atum" id="atum">
+                <label for="atum">atum</label>
+                <br>
+                <input type="checkbox" name="arroz" id="arroz">
+                <label for="arroz">arroz</label>
+                <br>
+                <input type="checkbox" name="frango" id="frango">
+                <label for="frango">frango</label>
+                <br>
+                <input type="checkbox" name="queijo" id="queijo">
+                <label for="queijo">queijo</label>
+    
+    
+               </div>
+               <hr>
+               <select name="estados" id="estados">
+               <optgroup label="Sul">
+                    <option value="SC" selected>Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande Do Sul</option>
+               </optgroup>
+               <optgroup label="Sudeste">
+                     <option value="SP">São Paulo</option>
+                     <option value="MG">Minas Gerais</option>
+                     <option value="RJ">Rio De Janeiro</option>
+                     <option value="ES">Espirito Santo</option>
+               </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="feedback">feedback</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="5">
+
+            </textarea>
+            <hr>
+
+
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+            </datalist>
+            <br>
+            <br>
+            <input type="submit" id="enviar">
+            <input type="reset" id="resetar">
+
+          
+           </fieldset>
+
+ 
+    </form>
+    
+</body>
+</html>
